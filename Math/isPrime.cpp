@@ -7,12 +7,12 @@ bool isPrime(int x) {
     for (int i = 2; i < x; i++) {
         if (x % i == 0) flag = false;
     }
-    return flag;
+    return flag && x > 1;
 }
 
 int main() {
 
-    isPrime(69) ? cout<<"Yes" : cout<<"No";
+    isPrime(0) ? cout<<"Yes" : cout<<"No";
 
     return 0;
 }
